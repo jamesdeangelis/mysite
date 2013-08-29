@@ -18,13 +18,12 @@
 .mp-level > ul > li:first-child > a:hover {
 /*	background: rgba(231, 76, 60,1);
 	color: #fff;*/
-	background: rgba(255, 255, 255, 0);
+	/*background: rgba(255, 255, 255, 0);*/
 }
 
 .mp-menu h2 {
 	text-transform: uppercase;
 	font-size: 1.4em;
-	/*letter-spacing: 2px;*/
 	font-weight: 300;
 }
 
@@ -40,35 +39,46 @@
 	background-color: #fafafa;
 }
 
-/*.mp-menu ul li > a {
-	font-size: 2em;
-	font-weight: 300;
-	font-style: normal;
-	letter-spacing: 0px;
-}*/
-
 .mp-menu ul li > a {
 	border-top: 1px solid #dadada;
 }
 
-.products {
-	border-bottom: 2px solid #e74c3c;
-	border-top: 1px solid #dadada;
-}
-.writing {
-	border-bottom: 2px solid #9b59b6;
-	border-top: none !important;
-}
-.about {
-	border-bottom: 2px solid #2980b9;
-	border-top: none !important;
-}
-
-/*.products,
+.products,
 .writing,
 .about {
-	border-bottom-width: 1px;
-}*/
+	-webkit-transition: all .25s ease !important;
+	 -moz-transition: all .25s ease !important;
+	 -ms-transition: all .25s ease !important;
+	 -o-transition: all .25s ease !important;
+	 transition: all .25s ease !important;
+	 border-left: 2px solid #fafafa;
+	 margin-left: -2px;
+	 border-bottom-width: 2px;
+	 border-bottom-style: solid;
+}
+
+.products {
+	border-color: #e74c3c;
+	border-top: 1px solid #dadada;
+}
+.products:hover {
+	border-left: .1em solid #e74c3c;
+}
+.writing {
+	border-color: #9b59b6;
+	border-top: none !important;
+}
+.writing:hover {
+	border-left: .1em solid #9b59b6;
+}
+.about {
+	border-color: #2980b9;
+	border-top: none !important;
+}
+.about:hover {
+	border-left: .1em solid #2980b9;
+}
+
 
 .mp-level > ul > li:first-child > a {
 	box-shadow: none !important;

@@ -1,4 +1,0 @@
-mysite
-======
-
-Personal site
